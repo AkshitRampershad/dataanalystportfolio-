@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heartbeat predection</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: transparent;
+      background-image:url("images/endless-constellation.png");
+      background-position: cover;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+
+       /* Style header and navigation */
+   header {
+      background-color: black;
+      padding: 35px;
+      display: flex;
+      justify-content: center; /* Align navigation in the middle */
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center; /* Align list items in the middle */
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      transition: all 0.3s ease;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    nav ul li:not(:last-child) a {
+    margin-right: 50px; /* Add space between each word */
+}
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: black;
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: white;
+      margin: 0;
+      padding: 0px 0;
+    }
+
+
+    li {
+    text-align: justify; /* Adjust alignment as needed */
+  }
+
+    .github-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      vertical-align: middle;
+    
+    }
+
+    /* Card Styles */
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: black;
+  
+  
+    }
+
+    /* Code Snippet Styles */
+    .code-snippet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .code-snippet img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+      header {
+        padding-top: 30px;
+        padding-bottom: 15px;
+      }
+      .container {
+        width: 100%;
+      }
+      .project {
+        flex-direction: column;
+      }
+      .project-image {
+        margin: -10px 0 0;
+        width: 100%;
+      }
+    }
+
+    /* Media Queries for code snips */
+@media (max-width: 768px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+    /* Media queries for responsive design */
+    @media (max-width: 768px) {
+      nav ul li {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30PX;
+        text-align: center;
+        margin-right: -20px;
+        margin-left: -50px;
+        margin-bottom: 0;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+     
+          </ul>
+        </nav>
+      </header>
+
+  <div class="container">
+    <header>
+      <h1>HEARTBEAT PREDICTION USING MACHINE LEARNING</h1>
+      <h1><a href="https://github.com/AkshitRampershad/HEARTBEAT-PREDICTION-MODEL-USING-MACHINE-LEARNING-/blob/main/Heartbeat%20Prediction%20Model%20.ipynb"
+        target="_blank"><img src="images/github-mark-white.png" alt="GitHub Icon" class="github-icon"></a></h1>
+    </header>
+    <div class="card">
+      <h2>PROJECT OVERVIEW</h2>
+      <p style="text-align: justify;">
+        The project goal was to determine if a measurement represented a typical heartbeat or showed abnormalities such as Normal Heartrate, Supraventricular premature heartbeat, Premature Ventricular contraction, Fusion of a ventricular and normal heartbeat, and Unclassified heartbeat. This project provides a better understanding of model building, predictive analysis, and the importance of adapting model parameters to improve prediction accuracy. It allowed us to uncover valuable information for early detection, risk assessment, treatment optimization, and proactive healthcare strategies. By leveraging these insights, healthcare professionals can make more informed decisions, improve patient care, and ultimately reduce the impact of cardiovascular diseases on individuals and healthcare systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>ABOUT OUR DATASET</h2>
+      <p style="text-align: justify;">
+        This data set is made available by MIT. It contains <a href="https://github.com/AkshitRampershad/MonkeyPox-Prediction-/blob/a8f452e2227fa7713c540bdcdbb5a979c3392641/TEAM_PARAMOUNT_FINAL%20PROJECT-1.ipynb" 
+        target="_blank">data</a> about 9,026 heartbeat measurements. Each row represents a single measurement captured on a timeline. Columns labeled as T1 from T80 are the time steps on the timeline (there are 80 time steps, each time step has only one measurement).The last column is the target variable. It shows the label (category) of the measurement as follows:<br><br>
+        <b>0</b> = Normal<br>
+        <b>1</b> = Supraventricular premature beat<br>
+        <b>2</b> = Premature ventricular contraction<br>
+        <b>3</b> = Fusion of ventricular and normal beat<br>
+        <b>4</b> = Unclassifiable beat
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>TOOLS AND TECHNOLOGIES</h2>
+      <p style="text-align: justify;">
+        <b>Machine learning models and frameworks:</b> Cross-Sectional Neural Networks, LSTM, Deep LSTM, GRU, Deep GRU<br>
+      <b>Machine learning libraries and frameworks:</b> Keras, TensorFlow, Python, Scikit-learn<br>
+        <b>Model evaluation and performance metrics:</b> Accuracy Score, Dummy Classifier, Learning rates <br>
+        <b>Keras optimizer functions:</b> Adam, Nadam<br>
+        <b>Activation functions:</b> ReLU, softmax<br>
+    </div>
+
+    <div class="card">
+      <h2>PROJECT WORKFLOW</h2>
+      <div class="code-snippet">
+        <img src="images/img5.webp" alt="Card Image 5">
+        <ul>
+          <li><B>Import machine learning libraries:</B> This step involves importing the necessary libraries and frameworks for machine learning, such as scikit-learn, Keras, and TensorFlow.</li>
+          <br>
+          <li><B>Read the dataset:</B> Load and explore the dataset into your program or notebook for your predictive modeling.</li>
+          <br>
+          <li><B>Split Data into Train and Test:</B>: The training data is used to train the machine learning model, while the testing data is used to evaluate its performance.</li>
+          <br>
+          <li><B>Find the target variable:</B> Identifying the target variable in our dataset, which is used for prediction. In this case, it is whether a heartbeat is normal or shows anomalies.</li>
+          <br>
+          <li><B>Check for missing values:</B> Perform data preprocessing steps, including checking for missing values in the dataset and handling them appropriately (e.g., imputation or removal).</li>
+          <br>
+          <li><B>Data transformation:</B> Perform necessary data transformations, In this case, we have converted the Target variables to an array with an integer type. Since Keras expects a different input format which is three dimensions.</li>
+          <br>
+          <li><B>Find Baseline:</B> Establish a baseline performance for your model. We have used accuracy score metrics since it is a multiclass classification task. By finding baseline values, it provides us a benchmark for evaluating the performance of our machine learning models. </li>
+          <br>
+          <li><B>Model Building:</B> Build different machine learning models to predict the target variable. In our case, we have built six other models: Cross-Sectional Neural Network, Deep Cross-Sectional Neural Network, LSTM, Deep LSTM, GRU, and Deep GRU.</li>
+          <br>
+          <li><B>Evaluation:</B> Evaluate the performance of each model using appropriate evaluation metrics. Compare the accuracy values of the models to identify the best-performing one.</li>
+          <br>
+          <li><B>Model selection:</B>Identify the best model by comparing it with the test accuracy score of the model to the baseline accuracy test score. </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>RESULT AND CODE SNIPPET</h2>
+      <div class="code-snippet">
+        <p style="text-align: justify;">
+          Our analysis of various models used to classify heartbeat measurements showed that the GRU model with one layer had the highest test accuracy at 94.14%. It outperformed the baseline by 34% and was able to capture complex patterns easily. This suggests that the model was effective in identifying patterns within the data. Additionally, the Deep Cross-Sectional Neural Network model, utilizing Keras with two or more hidden layers, achieved a high test accuracy of 93.13%. However, this model may be more susceptible to overfitting due to its increased number of parameters. In contrast, the GRU model, a type of recurrent neural network similar to LSTM, has fewer parameters and is quicker to train. Overall, the GRU model with one layer may be the most optimal choice for accurately classifying heartbeat measurements.
+          <br><br>
+        <img src="images/grumodel.jpg" alt="Card Image 1">
+        <img src="images/img2.png" alt="Card Image 2">
+        <img src="images/img3.jpg" alt="Card Image 3">
+        <H3>PERFORMANCE METRICS </H3>
+        <img src="images/img4.jpg" alt="PERFORMANCE METRICS">
+      </div>
+      
+    </div>
+
+    <div class="card">
+      <h2>FUTURE BUSINESS IMPLICATIONS AND IMPACT</h2>
+      <div class="code-snippet">
+        <p style="text-align: justify;">
+
+          Developing a predictive model capable of detecting normal or abnormal heartbeats offers immense potential for the <b>healthcare industry.</b> This model can be applied in various real-time scenarios, providing significant benefits:
+<br><br>
+          <img src="images/1-Figure1-1.png"><br>
+<b>1. Early Detection of Cardiovascular Diseases:</b> By accurately identifying abnormal heartbeats, the model enables early detection of cardiovascular diseases, allowing healthcare professionals to initiate timely treatments and interventions. For example, a wearable device with the predictive model continuously monitors an individual's heartbeat. If any abnormalities are detected, an alert is sent to the person's healthcare provider, facilitating prompt interventions such as medication adjustments or lifestyle modifications.
+	<br><br>
+
+<b>2. Improved Patient Care:</b> Integrating the predictive model into healthcare systems or wearable devices enables continuous real-time monitoring of individuals' heartbeats, leading to enhanced patient care. For instance, the model can be integrated into the cardiac monitoring system in a hospital setting. Nurses and doctors receive real-time alerts when a patient's heartbeat deviates from the normal range, enabling prompt medical attention and personalized care.
+<br><br>
+
+<b>3. Enablement of Preventive Medicine:</b> The model's ability to identify individuals at a higher risk of developing cardiovascular diseases enables proactive measures and preventive medicine strategies. To mitigate risks and prevent potential complications, healthcare professionals can offer personalized interventions, such as regular check-ups, dietary counseling, and exercise programs. For example, a healthcare clinic implements the predictive model as part of a preventive medicine program, providing targeted interventions to individuals identified as high-risk and promoting overall well-being.
+<br><br>
+
+<b>4. Cost Reduction in Healthcare:</b> Early detection and prevention of cardiovascular diseases can lead to significant cost savings in healthcare. By identifying and addressing issues early, the model helps avoid costly emergency treatments and hospitalizations. For example, health insurance companies can utilize the predictive model to identify individuals at high risk of cardiovascular diseases among their policyholders. They can offer proactive health management programs preventive screenings, and ultimately reducing healthcare costs for the insurance company and insured individuals.
+<br><br>
+
+<b>5. Advancements in Cardiovascular Healthcare:</b> The data collected and analyzed through the predictive model contribute to ongoing medical research and development, fostering improvements in cardiovascular healthcare. For instance, researchers utilize the model to analyze large-scale cardiac data from diverse populations, uncovering new patterns, trends, and relationships. This leads to the development of more accurate diagnostic techniques and personalized treatment strategies, ultimately improving patient outcomes and advancing the cardiology field.
+
+<br></br> 
+</p>
+
+<strong>In short, building a predictive model to detect normal or abnormal heartbeats can significantly impact the healthcare industry and, most importantly, save lives. </strong> 
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Akshit RamPershad All rights reserved.</p>
+  </footer>
+</body>
+</html>

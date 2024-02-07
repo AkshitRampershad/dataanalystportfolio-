@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: transparent;
+      background-image:url("images/endless-constellation.png");
+      background-position: cover;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+
+       /* Style header and navigation */
+   header {
+      background-color: black;
+      padding: 35px;
+      display: flex;
+      justify-content: center; /* Align navigation in the middle */
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center; /* Align list items in the middle */
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      transition: all 0.3s ease;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    nav ul li:not(:last-child) a {
+    margin-right: 50px; /* Add space between each word */
+}
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: black;
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: white;
+      margin: 0;
+      padding: 0px 0;
+    }
+
+
+    li {
+    text-align: justify; /* Adjust alignment as needed */
+  }
+
+    .github-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      vertical-align: middle;
+    
+    }
+
+    /* Card Styles */
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: black;
+  
+  
+    }
+
+    /* Code Snippet Styles */
+    .code-snippet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .code-snippet img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: transparent;
+      padding: 10px;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+      header {
+        padding-top: 30px;
+        padding-bottom: 15px;
+      }
+      .container {
+        width: 100%;
+      }
+      .project {
+        flex-direction: column;
+      }
+      .project-image {
+        margin: -10px 0 0;
+        width: 100%;
+      }
+    }
+
+    /* Media Queries for code snips */
+@media (max-width: 768px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+    /* Media queries for responsive design */
+    @media (max-width: 768px) {
+      nav ul li {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30PX;
+        text-align: center;
+        margin-right: -20px;
+        margin-left: -50px;
+        margin-bottom: 0;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+     
+          </ul>
+        </nav>
+      </header>
+
+  <div class="container">
+    <header>
+      <h1>Exploring Multilingual Text Relationships</h1>
+      <h1><a href="https://github.com/AkshitRampershad/Contradictory-My-Dear-Watson"
+        target="_blank"><img src="images/github-mark-white.png" alt="GitHub Icon" class="github-icon"></a></h1>
+    </header>
+    <div class="card">
+      <h2>PROJECT OVERVIEW</h2>
+      <p style="text-align: justify;">
+        The project focuses on developing and assessing Natural Language Inference (NLI) models to delve into Multilingual Text Relationships. The model aim to predict whether a given hypothesis aligns with its premise through contradiction, entailment, or neutrality. We delve into diverse aspects such as model architectures, data preprocessing, training strategies, ensemble learning, and performance analysis, focusing on multilingual models like ROBERTA, mBERT, XLM RoBERTa, and a unique ensemble of XLM-RoBERTa as a base model trained on SNLI, MNLI, ANLI, and XNLI datasets with Stacking and Averaging techniques.
+<br>
+<br>
+        In our analysis of NLI models for the "Contradictory, My Dear Watson" Kaggle competition, we found that the ensemble stacking method, with XLM-RoBERTa as the foundation, achieved the highest test accuracy in predicting sentence relationships based on hypotheses and premises.
+        The primary performance metric is <b>accuracy</b>. A powerful acknowledgment from our reflection underscores the critical role of ensemble learning in enhancing NLI performance, ensuring the model's effectiveness in real-world scenarios.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>ABOUT OUR DATASET</h2>
+      <p style="text-align: justify;">
+        
+        The <a href="https://www.kaggle.com/competitions/contradictory-my-dear-watson/overview" 
+        target="_blank">data</a> is derived from kaggle. It consists text in fifteen languages, steps involve data extraction from a DataFrame, utilizing 'premise' and 'hypothesis' columns as input features, and the 'label' column as target labels. This diverse dataset includes text in various languages like English, Spanish, French, Hindi, and Russian, totaling 12,120 rows and 8 columns.
+        <br><br>
+        The label distribution is defined as follows:
+        <br>
+        <b>0</b> = Entailment<br>
+        <b>1</b> = Neutral<br>
+        <b>2</b> = Contradiction<br>
+      </p>
+      <div style="flex: -1; text-align: center;">
+        <img src="images/label.png" alt="Language Distribution">
+    </div>
+
+    </div>
+
+    <div class="card">
+      <h2>TOOLS AND TECHNOLOGIES</h2>
+      <p style="text-align: justify;">
+        <b>Natural Language Interface Models:</b> Transformers, RoBERTa, mBERT, XML-RoBERTa, <br>
+
+     <b>Deep learning libraries:</b> Keras, TensorFlow, Python, Scikit-learn, pandas, NumPy, Matplotlib<br>
+<b>Model evaluation and performance metrics:</b> Accuracy Score, Learning Rates, Early Stopping, Dropout Regularizations, Ensemble strategies(Stacking and Averaging) <br>
+
+<b>Optimizer functions:</b> Adam <br>
+        <b>Activation functions:</b> Softmax, ReLU<br>
+    </div>
+
+    <div class="card">
+      <h2>BEST PERFORMANCE MODEL: Natural Language Inference using Ensemble of XLM-RoBERTa, trained on SNLI, MNLI, ANLI, and XNLI datasets Wwith Stacking and Averaging</h2>
+<p style="text-align: justify;">
+  This code exemplifies an ensemble approach for Natural Language Inference (NLI) using finetuned XLM-RoBERTa models, incorporating data from SNLI, MNLI, ANLI, and XNLI
+  datasets. By leveraging ensemble techniques such as stacking and averaging, it enhances NLI
+  accuracy. SNLI serves as the foundational dataset for assessing logical relationships between
+  sentence pairs, while MNLI extends this by encompassing diverse genres and styles. ANLI
+  introduces adversarial sentence pairs to evaluate model robustness against challenging
+  language variations. Finally, XNLI extends NLI to cross-lingual scenarios, improving the
+  model's performance in understanding sentence relationships across multiple languages,
+  making this approach highly versatile and comprehensive in addressing NLI challenges.
+</p>
+
+<p><B>STEPS</B></p>
+      <div class="code-snippet">    
+        <ul>
+          <B>Extracting data from a DataFrame (df):</B>
+          <p> The 'premise' and 'hypothesis' columns are selected and stored in variable X, representing the input text data for the NLI task. The labels associated with each NLI tasks are extracted and stored in the variable y</p>
+          <img src="images/nlio.png">
+
+          <br>
+          <B>Tokenizing and Encoding the Data:</B>
+          <p>A custom function, <code>get_encodings(data)</code>, is defined for tokenizing and encoding the input data.
+                This function performs the following tasks:</p>
+            <ol>
+                <li>
+                    Separates the premises and hypotheses from the input data.                </li>
+                <li>
+                    Utilizes the XLM-RoBERTa tokenizer to tokenize the text data and applies tokenization parameters, including
+                    padding sequences to the maximum length, truncation of longer sequences, by a maximum sequence length of 128
+                    characters.
+          
+                </li>
+                <li>
+                    The function "get_encodings(data)" then converts the tokenized data into TensorFlow tensors and returns a
+                    dictionary of inputs suitable for the model.
+                </li>
+            </ol>
+        
+        <img src="images/NLI1.png">
+        </li>
+          <br>
+
+          <B>Training Multiple Model:</B>
+            <p>
+              Multiple models are instantiated and undergo fine-tuning. The code iterates through the creation and training of these models, adhering to a consistent training process and configuration:
+          </p>
+      
+          <ol>
+              <li>
+                  Each model undergoes the same training procedure with the following specifications:
+              </li>
+              <li>
+                  Early stopping is implemented to monitor the validation loss and restore the weights corresponding to the best performance.
+              </li>
+              <li>
+                  A learning rate reduction strategy, specifically ReduceLROnPlateau, is employed to dynamically adjust the learning rate during the training process.
+              </li>
+              <li>
+                  A defined learning rate schedule is implemented.
+              </li>
+              <li>
+                  The optimizer, loss function, and evaluation metric are appropriately configured.
+              </li>
+              <li>
+                  Training is executed on the training dataset for a fixed number of epochs (20 in this case), utilizing a specified batch size.
+              </li>
+              <li>
+                  Training predictions are stored to facilitate later ensemble stacking.
+              </li>
+            </ol>
+            <img src="images/NLI2.png">
+            <p>We have used Symanto's <u><b> &quot;symanto/xlm-roberta-base-snli-mnli-anli-xnli&quot;</b></u> model, released in 2022, which is designed for natural language inference. It is based on a cross-lingual RoBERTa architecture fine-tuned on datasets like SNLI, MNLI, ANLI, and XNLI, making it a versatile tool for language understanding tasks.
+
+            </p>
+            <img src="images/NLI3.png">
+          </li>
+
+          <br>
+          <B>Ensemble Stacking and Prediction:</B> 
+            <br>
+            <br>
+            <b>Ensemble Stacking:</b>
+
+            <p>
+                After training the models, their predictions on the training and validation datasets are stored for ensemble stacking. The stacking model is defined with dense layers, dropout, and softmax activation.
+            </p>
+        
+            <b>Ensemble Prediction:</b>
+        
+            <p>
+                Two ensemble prediction strategies are implemented and
+                    the stacked model's predictions are evaluated, and its accuracy is reported. And then the Ensemble Predictions from individual models are combined using averaging, and the accuracy of the ensemble is reported.
+
+            </p>
+          
+            </li>
+            <img src="images/NLI4.png">           
+        </ul>
+            <br>
+            <br>
+           <b>The code showcases an ensemble learning approach for NLI using XLM-RoBERTa models
+            fine-tuned on diverse datasets. It leverages stacking and averaging strategies to achieve higher
+            accuracy in NLI tasks. The stacking model demonstrates a test accuracy of around 90.06%,
+            while the ensemble strategy yields an accuracy of approximately 89.77%. These results
+            highlight the effectiveness of ensemble techniques for NLI.
+          </b>            
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>PERFORMANCE METRICS</h2>
+      <div class="code-snippet">
+        <p style="text-align: justify;">
+          <ul>
+          <li><b>RoBERT:</b> The RoBERTa model showed the lowest performance, due to its relatively simple architecture. This model achieved a test accuracy of<b> 63.04%</b> we have considered it as the base model to compare the model performance with other multilingual models.
+          </li>
+<br>
+          <li><b>mBERT:</b>This model showed improvement over the RoBERT by achieving a test accuracy of <b>65.72%</b>.
+          </li>
+    <br>      
+          <li><b>XLM-RoBERTa Fine-Tunined with Custom Architecture and Dropout Regularization:</b> The XML-RoBERTa model improved the accuracy by implementing early stopping
+            to evaluate the model's performance on the test. The model achieved a test accuracy of
+            approximately <b>68.8%</b> and a test loss of approximately 0.730.
+        
+          </li>
+<br>
+          <li><b>XML-RoBERTa with layer-wise fine-tuning:</b> Fine Tune XML-RoBERTa model improved the accuracy by implementing custom
+            architecture and dropout regularizations. The model achieved a test accuracy of approximately<b> 70.12%</b>
+            and a test loss of approximately 0.71 after training. 
+          </li>
+
+<br>
+          <li><b>Ensemble Learning for NLI with Stacking and Averaging Strategies on XLM-RoBERTa:</b> The ensemble learning with stacking and averaging on xlm-roberta resulted in a
+            minor accuracy increase of about <b> 70.50%</b>, showcasing the effectiveness of the ensemble
+            strategy
+          </li>
+
+<br>
+          <li><b>Ensemble Learning with L2 Regularization on XLM-RoBERTa:</b> By applying ensemble learning with stacking, averaging, and L2 regularization on
+            xlm-roberta with bidirectional LSTM led to improved prediction performance. The stacked
+            model achieved a test accuracy of around <b>70.79%</b>, while the ensemble strategy yielded
+            approximately<b> 70.87%</b> accuracy, affirming the effectiveness of ensemble techniques.
+          </li>
+
+<br>
+          <li><b>Natural Language Inference using Ensemble of XLM-RoBERTa trained on SNLI, MNLI, ANLI, and XNLI Datasets with Stacking and Averaging:</b> An ensemble of Xlm-Roberta trained on SNLI, MNLI, ANLI, and XNLI datasets
+            with stacking and averaging demonstrated a robust approach for NLI. The stacking model
+            achieved a test accuracy of about <b>90.06%</b>, while the ensemble strategy showed an accuracy of
+            approximately <b>89.77%</b>. These results underscore the effectiveness of ensemble techniques in
+            enhancing accuracy in NLI tasks.
+           
+          </li>          
+          </ul>
+        
+      </div>
+      
+    </div>
+
+    <div class="card">
+      <h2>OBSERVATIONS AND BUSINESS IMPACT</h2>
+      <div class="code-snippet">
+        <p style="text-align: justify;">
+
+          The  XML RoBERTa model, trained on a diverse range of datasets including SNLI, MNLI, ANLI, and XNLI, and enhanced with stacking and averaging techniques, demonstrated remarkable proficiency in predicting sentence pairs based on premise-hypothesis relationships. With an ensemble strategy, it achieved an impressive accuracy of 89.77% in discerning whether the sentences are entailed, contradictory, or neutral to each other. Additionally, the model exhibits multilingual capabilities, accurately predicting the language of input sentences from a pool of 15 different languages. This comprehensive approach underscores the model's robustness and versatility in understanding and analyzing textual data across various linguistic contexts.
+<br><br>
+          <img src="images/NLI5OUTPUT.png"><br>
+          Our Model has practical implications, which can lead to the development of more robust NLI systems that can benefit businesses and social welfare: 
+          <br><br>
+<b>1. Fact-Checking:</b> The NLI (Natural Language Inference) model can undergo further refinement and be applied by news organizations for the development of a robust fact-checking tool. This tool can be instrumental in verifying the accuracy of political statements, particularly during election campaigns. By leveraging the NLI model, news organizations can empower citizens with reliable information, enabling them to make well-informed voting decisions based on verified and credible sources.
+	<br><br>
+
+<b>2. Fake News Detection:</b> The NLI (Natural Language Inference) model can undergo further fine-tuning and be harnessed across social media platforms. By implementing NLI models, these platforms can automate the identification and labeling of potentially false or misleading content. This proactive approach helps in mitigating the dissemination of fake news and disinformation, contributing to a more trustworthy and reliable online environment.
+
+<br><br>
+
+<b>3. Sentiment Analysis:</b> The NLI (Natural Language Inference) model can be further fine-tuned and applied in a restaurant chain for sentiment analysis. This can help analyze customer reviews and pinpoint specific areas that require improvement. By leveraging the insights gained from the NLI model, the restaurant chain can make informed decisions, leading to menu adjustments and overall enhancements in the dining experience.
+
+<br><br>
+</p>
+<strong>In short, The NLI model offers versatile applications for business.Its adaptability contributes to better decision-making and fosters trust across diverse business. </strong> 
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Akshit RamPershad All rights reserved.</p>
+  </footer>
+</body>
+</html>

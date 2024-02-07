@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>monkeypox prediction</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: transparent;
+      background-image:url("images/endless-constellation.png");
+      background-position:cover;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Style header and navigation */
+       header {
+      background-color: transparent;
+      padding: 15px;
+      display: flex;
+      justify-content: center; /* Align navigation in the middle */
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center; /* Align list items in the middle */
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      transition: all 0.3s ease;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    nav ul li:not(:last-child) a {
+    margin-right: 50px; /* Add space between each word */
+}
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: transparent;
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: white;
+      margin: 0;
+      padding: 0px 0;
+      text-align: center;
+    }
+
+    .github-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      vertical-align: middle;
+    
+    }
+
+    li {
+    text-align: justify; /* Adjust alignment as needed */
+  }
+
+    /* Card Styles */
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    /* Code Snippet Styles */
+    .code-snippet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .code-snippet ul {
+      flex: 1;
+      margin-right: 50px;
+      margin-left: 40px;
+    }
+
+    .code-snippet img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      margin-bottom: 10px;
+      margin-left: 23px;
+    }
+
+    .code-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+      align-self: flex-start;
+    }
+
+    .code-images img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    /* Footer Styles */
+    footer {
+
+      padding: 10px;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .github-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .code-snippet ul {
+    margin-bottom: 10px;
+  }
+
+  .code-snippet img,
+  .code-images img {
+    max-width: 100%;
+  }
+
+  /* Updated media query for workflow images */
+  .project-image {
+    margin-top: 15px; /* Add margin to create space between description and image */
+  }
+}
+
+/* Media Queries for code snips */
+@media (max-width: 768px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-snippet img {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  nav ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-right: -20px;
+    margin-left: -50px;
+    margin-bottom: 0;
+  }
+}
+
+/* Media Queries CODE WORKFLOW IMG*/
+@media screen and (max-width: 768px) {
+  /* Other styles */
+
+  /* Updated media query for workflow images */
+  .code-snippet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column; /* Reverse the order of elements */
+  }
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+      </header>
+
+  <div class="container">
+    <header>
+      <h1>MONKEYPOX PREDICTION MODEL FOR RAPID DISEASE DETECTION</h1>
+      <h1><a href="https://github.com/AkshitRampershad/MonkeyPox-Prediction-/blob/main/TEAM_PARAMOUNT_FINAL%20PROJECT-1.ipynb" target="_blank"><img src="images/github-mark-white.png" alt="GitHub Icon" class="github-icon"></a></h1>
+    </header>
+
+    <div class="card">
+      <h2>PROJECT OVERVIEW: </h2>
+      <p style="text-align: justify;">
+        In many cases, lack of awareness and timely disease determination can lead to tragic outcomes, with lives often lost as a result. One such disease that has recently emerged as a concern is monkeypox. 
+        Our project aims to address this issue by developing an elegant learning algorithm using a comprehensive dataset of global Monkeypox patients. The goal is to create a predictive model that can effectively determine whether an individual tests positive or negative for monkeypox.         <br><br>
+        Our analysis identified "precision" as a reliable metric for comparing and evaluating the performance of different models, and by closely examining performance metrics, we can gain valuable insights into the relationship between various machine learning algorithms and the dimensionality of the data. Analyzing different models will help us find the most accurate and efficient one for predicting monkeypox. This will improve our decision-making and overall performance. Through the development of this Monkeypox prediction model, our ultimate objective is to contribute to the rapid detection and prevention of this disease. By leveraging the power of data-driven insights, we aim to improve disease management and enhance patient outcomes, and healthcare professionals can initiate timely interventions, effectively manage the disease, and save lives. 
+        
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>ABOUT OUR DATASET</h2>
+      <p style="text-align: justify;">
+        This is a SYNTHETIC dataset that was generated based on a study conducted by the British Medical Association<a href="https://bestpractice.bmj.com/topics/en-us/1611>Kaggle">(BMJ)</a> and published on <a href="https://www.kaggle.com/datasets/muhammad4hmed/monkeypox-patients-dataset">Kaggle</a>. The dataset has a record of 25,000 Patients with their corresponding features and a target variable indicating whether the patient has monkeypox.
+      <br>
+      <b>Number of features: </b>10 <br> 
+      <b>Target Variable:</b> MonkeyPox  <br>
+      <b>Classification of target Variable:</b> Binary    <br>
+      <b>Column Variables:</b> Rectal Pain, Sore Throat, Penile Oedema, Oral Lesions, Solitary Lesion, Swollen Tonsils,HIV Infection, Sexually Transmitted Infection<br>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>TOOLS AND TECHNOLOGY </h2>
+      <p style="text-align: justify;">
+        <b>Machine Learning Models:</b>
+        K-NN (with and without fold), Decision Tree, Logistic regression, ADA boost, Gradient Descent, Neural Networks<br>
+       <b> Machine Learning Libraries and Frameworks:</b>
+        Pandas, NumPy, Scikit-learn Matplotlib(for Decision Tree visualization) <br>
+        <b>Data Preprocessing and Transformation:</b>
+        OrdinalEncoder, LabelEncoder, StandardScaler, GridSearchCV (for Hyperparameter Tuning)<br>
+        <b>Classifiers:</b>
+        KNeighborsClassifier, DecisionTreeClassifier, best_logClassifer
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h2>PROJECT WORKFLOW</h2>
+      <div class="code-snippet">
+        <ul>
+          <li><b>Import Libraries:</b> : Begin by importing the necessary libraries for data manipulation and machine learning, such as Pandas, NumPy, scikit-learn, and matplotlib.</li>
+          <br>
+          <li><b>Read the Dataset:</b> Load and explore the dataset into your program or notebook for your predictive modeling.</li>
+          <br>
+          <li><b>Clean Dataset for Missing Values:</b> Check and handle missing values appropriately to ensure the data is complete and ready for analysis.</li>
+          <br>
+          <li><b>Convert the Target Variable (Monkeypox) to Binary:</b> Convert the categorical target variable into binary format (0 or 1), representing the absence or presence of monkeypox.</li>
+          <br>
+          <li><b>Split the Dataset into Test and Validation:</b> Divide the dataset into training and validation subsets for model training and evaluation.</li>
+          <br>
+          <li><b>Train Models:</b> Build and train machine learning models using the training dataset. Experiment with different models and tune their hyperparameters.</li>
+          <br>
+          <li><b>Evaluate Model Performance:</b> Assess the models' performance using evaluation metrics such as accuracy, precision, recall, F1 score. We have applied precision in our model prediction. </li>
+          <br>
+          <li><b>Iterate and Improve:</b> Refine the model by adjusting parameters, trying different algorithms, or exploring feature engineering techniques to achieve desired accuracy and performance.</li>
+            <br>
+          <li><b>Model Validation:</b> Validate the model's performance on the validation dataset to assess its generalization and identify potential adjustments.</li>
+        </ul>
+
+        <div class="code-images">
+          <img src="images/img13.jpg" alt="Card Image 6">
+          <img src="images/img9.jpg" alt="Card Image 5">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>RESULT AND CODE SNIPPET</h2>
+      <div class="code-snippet">
+        <p style="text-align: justify;">
+        
+          Based on the precision scores obtained for each model, the best-performing model for monkeypox prediction is the Logistic Regression model. It achieved a precision score of 0.684, indicating its ability to correctly predict positive cases of monkeypox with a high degree of accuracy. The precision score measures the proportion of true positive predictions out of all positive predictions made by the model.
+<br><br>
+          The Logistic Regression model outperformed other models such as K-NN, Decision Tree, ADA Boost, Gradient Descent, and Neural Networks in terms of precision. This suggests that the Logistic Regression model had a better ability to correctly identify positive cases of monkeypox, making it more suitable for rapid disease detection. The model was fine-tuned using hyperparameter tuning techniques to optimize its performance.
+
+          <div class="code-snippet">
+          <img src="images/monkeypoxresult1.png" alt="Card Image 1">
+          </div>
+
+          <p style="text-align: justify;"> The choice of precision as the evaluation metric was crucial in this project as it prioritizes minimizing false positive predictions; by maximizing precision (TP/TP+FP), we aim to reduce the number of false positives, which in the context of monkeypox detection, corresponds to reducing the number of individuals incorrectly identified as positive for the disease. This is crucial because false positives can result in unnecessary medical expenses and treatments for individuals who do not actually have monkeypox, leading to financial burden and potentially causing undue stress and anxiety. In addition to precision, optimizing recall (TP/TP+FN) is also essential. Recall measures the proportion of actual positive cases that the model correctly identifies. By optimizing recall, we aim to minimize false negatives, ensuring that individuals who have monkeypox are not incorrectly classified as negative. This is important to avoid missing cases and provide timely intervention and treatment for infected individuals.</p>
+
+        <img src="images/img10.jpg" alt="Card Image 1">
+        <img src="images/img11.jpg" alt="Card Image 2">
+        <img src="images/img12.jpg" alt="Card Image 3">
+        <img src="images/img6.jpg" alt="Card Image 4">
+
+    <p style="text-align: justify;">By achieving a higher precision score, the Logistic Regression model demonstrated its effectiveness in reducing the chances of false alarms and ensuring accurate identification of monkeypox cases. </p>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>BUSINESS IMPLICATIONS AND IMPACT</h2>
+      <p style="text-align: justify;">
+        Developing a predictive model for monkeypox detection has significant future business implications. Currently, testing for monkeypox involves time-consuming processes like PCR tests, leading to potential delays in diagnosis and treatment. By implementing a predictive model, we aim to build resilient health systems that can be used by <b>Healthcare professionals</b> to respond quickly to outbreaks and improve patient outcomes. Our model has shown a precision of over 68%, accurately identifying positive monkeypox cases.
+ <br><br>
+        The Monkeypox prediction model developed through this project could have significant business implications and impact disease detection and healthcare. Here are some future business implications and effects that can arise from using this model:
+        <br><br>
+        <b>1. Improved Disease Management:</b> The Monkeypox prediction model can improve disease management by enabling timely detection and intervention. Healthcare professionals can use the model to identify individuals at high risk of monkeypox, allowing for early treatment and containment measures. This can help reduce the spread of the disease and mitigate its impact on affected individuals and communities.
+        <br><br>
+        <b> 2. Cost Savings:</b> model can help healthcare systems and individuals save costs by accurately predicting monkeypox cases. With precision-focused prediction, the model minimizes false positives, reducing unnecessary medical expenses, tests, and treatments for individuals incorrectly identified as positive. This cost-saving potential can positively impact healthcare budgets and reduce the financial burden on patients.
+        <br><br>
+        <b>3. Efficient Resource Allocation:</b> The model can assist in efficient resource allocation within healthcare systems. By identifying individuals at high risk of monkeypox, healthcare providers can allocate resources such as vaccines, medications, and personnel to areas and populations that need them the most. This targeted approach ensures efficient utilization of resources and maximizes the effectiveness of disease prevention and management efforts.
+        <br><br>
+        <b>4. Public Health Planning and Preparedness: </b> The Monkeypox prediction model can inform public health planning and preparedness strategies. By analyzing the model's predictions and patterns, public health authorities can gain insights into the prevalence and spread of monkeypox, identify high-risk regions or populations, and develop targeted prevention and control measures. This proactive approach enhances public health planning, response capabilities, and preparedness for managing future disease outbreaks.
+        <br><br>
+        <b> 5. Enhanced Patient Outcomes:</b>The model can improve patient outcomes by facilitating early detection and intervention. Timely identification of monkeypox cases allows for prompt treatment and care, reducing the severity and complications associated with the disease. Improved patient outcomes benefit individuals and contribute to overall public health and well-being.
+        <br><br>
+
+        <b>Leveraging this model can lead to timely treatment interventions, reduced spread, and improved global responses to outbreaks, ultimately contributing to building resilient health systems.</b>  
+      </p>
+    </div>
+
+
+
+    <footer>
+      <p> Akshit RamPershad All rights reserved </p>
+    </footer>
+  </div>
+</body>
+</html>

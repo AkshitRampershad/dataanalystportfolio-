@@ -3,7 +3,7 @@ Hello and Welcome to my personal website! This site serves as a digital portfoli
 
 ## Features
 - **About Me**: Learn about my educational background, professional experience, and the skills I've honed over the years.
-- **Portfolio**: Browse through the projects and initiatives I've worked on, highlighting my roles and contributions.
+- **Education**: Browse through the projects and initiatives I've worked on, highlighting my roles and contributions.
 - **Blog**: Read my thoughts and insights on topics related to business analysis, product management, and technology.
 - **Contact**: Get in touch with me through various channels, whether for collaboration, networking, or inquiries.
 
